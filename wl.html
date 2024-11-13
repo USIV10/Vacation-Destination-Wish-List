@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="wl.css">
+    <title>WishList</title>
+</head>
+<body>
+    <header>
+        <h1> Vacation Destinations Wish List </h1>
+        <p> Found exciting places to visit on your vacation? use the form below to add them to your wish list </p>
+    </header>
+
+    <main>
+        <form id="destination_details_form">
+            <label for="name">Destination Name</label>
+            <input type="text" id="name" placeholder="provide a name for the destination" required>
+
+            <label for="location">Destination Location</label>
+            <input type="text" id="location" placeholder="where is this destination" required>
+
+            <label for="photo">Photo</label>
+            <input type="url" id="photo" placeholder="provide a url for a photo">
+
+            <label for="description">Destination Description</label>
+            <textarea id="description" placeholder="Describe the destination"></textarea>
+
+            <button type="submit" class="btn btn-info"> Add to list </button>
+        </form>
+       <article>
+        <h2 id="title">Enter Destination Details</h2>
+        <div id="destinations_container">
+        </div>
+       </article>
+
+
+
+    </main>
+  <script src="wl.js"></script>
+</body>
+</html>
